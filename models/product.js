@@ -78,7 +78,11 @@ const productSchema=new Schema({
   specs:{
     type:productSpecsSchema,
   required:[true]
-  }
+},
+productImages:{
+  type:[String],
+  required:[true]
+}
 });
 // model
 const Product=mongoose.model('product',productSchema);

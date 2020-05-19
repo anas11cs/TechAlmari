@@ -49,7 +49,7 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use('/api',routes);
 
-//error handlung middleware
+//error handling middleware
 app.use(function(err,req,res,next){
 res.status(422).send({error:err.message});
 });

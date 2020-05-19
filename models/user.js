@@ -17,5 +17,4 @@ const userSchema=new Schema({
 });
 // model
 const User=mongoose.model('user',userSchema);
-// 1st paramenter is name of model/table and then the scehma or structure in that model/table
 module.exports=User;
